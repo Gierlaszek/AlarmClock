@@ -23,9 +23,16 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 //############################################################################################################
-//Adding android.permission.FOREGROUND_SERVICE to Android manifest ->  is a normal permission,
+// Adding android.permission.FOREGROUND_SERVICE to Android manifest ->  is a normal permission,
 // so the system automatically grants it to the requesting app, needed to startForeground
-//Adding android.permission.RECEIVE_BOOT_COMPLETED to Android manifest -> auto run service after reboot device
+// Adding android.permission.RECEIVE_BOOT_COMPLETED to Android manifest -> auto run service after reboot device
+
+// WARNING
+// For everything to work, needed upgrade AndroidManifest.
+// Add:
+// - service
+// - receiver
+// - permission 
 //############################################################################################################
 
 
