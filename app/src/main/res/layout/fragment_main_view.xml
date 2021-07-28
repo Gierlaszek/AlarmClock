@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainView">
+
+    <TextClock
+        android:id="@+id/textClock"
+        android:layout_width="315dp"
+        android:layout_height="72dp"
+        android:format12Hour="hh:mm:ss a"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <NumberPicker
+        android:id="@+id/NumPickHour"
+        android:layout_width="119dp"
+        android:layout_height="142dp"
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="224dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <NumberPicker
+        android:id="@+id/NumPickMin"
+        android:layout_width="119dp"
+        android:layout_height="142dp"
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="68dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="264dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="183dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginBottom="180dp"
+        android:onClick="onClickButton"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
